@@ -1,0 +1,114 @@
+.header {
+    display: flex;
+    height: 60px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    width: 100vw;
+  }
+  
+  .header div {
+    padding: 12px;
+  }
+  
+  .header__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 7%;
+  }
+  
+  .header__logo img {
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  
+  .header__logo span {
+    color: gray;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 16px;
+  }
+  
+  .header__search-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
+  
+  .header__searchbar {
+    height: 120%;
+    border-radius: 6px;
+    background-color: rgb(237, 237, 237);
+    align-items: center;
+  }
+  
+  .header__searchbar input {
+    flex: 1;
+    height: 60px;
+    font-size: 1rem;
+    color: lightgray;
+    background: none;
+    border: none;
+    margin-left: 12px;
+  }
+  
+  .header__searchbar input:focus {
+    outline: none;
+    color: #000;
+  }
+  
+  .header__icons {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  }
+  
+  .header__icons .MuiSvgIcon-root {
+    font-size: 1.75rem;
+    color: rgb(82, 82, 82);
+  }
+  
+  .header__icons span {
+    margin-right: 20px;
+  }
+  
+  .header__icons img {
+    height: 100%;
+    border-radius: 50%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-left: 5px;
+  }
+  
+  .MuiSvgIcon-root {
+    color: rgb(82, 82, 82);
+    margin: 4px;
+  }
+
+  .MuiFilledInput-root {
+    margin-top: 6px;
+  }
+
+  .MuiTextField-root {
+    padding: 0 !important;
+  }
+
+  .MuiInputBase-root {
+
+    height: 37px;
+
+  }
+
+  .MuiInputBase-root::before {
+    border-bottom: none !important;
+  }
+
+  .MuiInputBase-root, .MuiInputBase-root:focus {
+    background-color: inherit !important;
+  }
+
+
+
+
