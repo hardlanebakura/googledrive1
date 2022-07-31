@@ -1,0 +1,11 @@
+#view {
+    margin: auto;
+}
+
+#files-view__row {
+    display: flex;
+}
+
+.files-view__item {
+    margin: 17px;
+}

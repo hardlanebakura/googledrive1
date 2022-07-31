@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './header.css';
 import logo from '../../logo/google-drive.png';
 import { Search as SearchIcon, ExpandMore as ExpandMoreIcon, HelpOutline, Settings, Apps } from '@mui/icons-material';
@@ -9,10 +9,11 @@ import { makeStyles } from '@mui/styles';
 const Header = (properties) => {
 
   const [isLogged, setIsLogged] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (properties.user !== null) setIsLogged(true);
-  })
+  }, [])
 
   const handleSearch = (e) => {
     console.log("1");
@@ -30,6 +31,12 @@ const Header = (properties) => {
     }
 
   })
+
+  const handleMenu = (e) => {
+    (e.target.nextElementSibling.style.display == "block") ? e.target.nextElementSibling.style.display = "none" : e.target.nextElementSibling.style.display = "block";
+  }
+
+  const handleLogoutKey = (e) => { setIsLogged(false); }
 
   return (
     <div className="header">
@@ -51,7 +58,7 @@ const Header = (properties) => {
           </span>
 
           <Apps />
-          { (isLogged) ? <img src = "" alt="User Avatar" /> : <div className="header__login"><Link to="/login">Login</Link></div> }
+          { (isLogged) ? <div id = "user-info__container"><div id="user-avatar" onClick = { handleMenu } >{ properties.user[0] }</div><div id="logout" onClick = { handleLogoutKey } >Logout</div></div> : <div className="header__login"><Link to="/login">Login</Link></div> }
         </div>
     </div>
   )

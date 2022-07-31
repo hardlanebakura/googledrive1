@@ -4,10 +4,11 @@ import NewFile from './NewFile';
 import SidebarItem from './SidebarItem';
 import { InsertDriveFile, ImportantDevices, PeopleAlt, QueryBuilder as QueryBuilderIcon, StarBorder as StarBorderIcon, DeleteOutline, CloudQueue as Cloud } from '@mui/icons-material';
 
-const Sidebar = () => {
+const Sidebar = (properties) => {
+
   return (
     <div className="sidebar">
-        <NewFile />
+        <NewFile user = { properties.user } />
         <div className="sidebar__items-container">
             <SidebarItem arrow icon = {(<InsertDriveFile />)} label = { "MyDrive" } />
             <SidebarItem arrow icon = {(<ImportantDevices />)} label = { "Computers" } />

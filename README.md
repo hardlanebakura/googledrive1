@@ -1,3 +1,11 @@
 ## Google Drive Clone Project
 
-to be finished during the weekend
+This project uses:
+<ul>
+    <li>MERN stack</li>
+    <li>PHP</li>
+    <li>React</li>
+    <li>React Material UI</ui>
+</ul>
+
+Thank you for coming here!

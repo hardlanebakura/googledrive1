@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   --do: #ff8300;
+  --dg: #6aa84f;
 }
 
 body {
@@ -23,3 +24,8 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+#sidebar_and_views {
+  display: flex;
+}
+
