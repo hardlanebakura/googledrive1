@@ -14,7 +14,7 @@ const Login = () => {
   const getAllUsers = () => {
     axios.get("http://localhost/googledrive1/api/api_items.php")
     .then(response => response.data)
-    .then(response => { console.log(response); setAllUsers(response); })
+    .then(response => { setAllUsers(response); })
     .catch(error => console.log(error));
   }
 

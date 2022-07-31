@@ -20,17 +20,17 @@ const View = (properties) => {
 
   return (
     <div id="view">
-      { (properties.user !== null) 
-      ? <><div id = "files-view__title">
-          Your files
-        </div>
-      <div id = "files-view__row">
-        { files.map((file, index) => {
-          return <div className = "files-view__item" key = { index}  >{ file.split(".")[file.split(".").length - 2] }</div>
-        }) }
-      </div> 
-      </>
-      : <div id = "files_view_row">Login to add files</div> }
+        { (properties.user !== null) 
+        ? <><div id = "files-view__title">
+            Your files
+          </div>
+        <div id = "files-view__row">
+          { files.map((file, index) => {
+            return <div className = "files-view__item" key = { index}  >{ file.split(".")[file.split(".").length - 2] }</div>
+          }) }
+        </div> 
+        </>
+        : <div id = "files_view_row">Login to add files</div> }
     </div>
   )
 }
