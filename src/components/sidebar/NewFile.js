@@ -79,7 +79,7 @@ const NewFile = (properties) => {
                 aria-describedby = "modal-modal-description"
             >
                 <Box sx = { style } >
-                    <Typography id = "modal-modal-title" variant = "h6" component = "h2" >
+                    <Typography id = "modal-modal-title" variant = "h6" component = "h2" sx = {{ mt:2, ml:4, pb:2 }} >
                         <input type = "file" onChange = { handleUpload } id = "file" accept = ".txt" />
                     </Typography>
                     <Typography id = "modal-modal-description" sx = {{ mt:2, ml:4, pb:2 }} >
